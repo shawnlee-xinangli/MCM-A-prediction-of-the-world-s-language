@@ -66,7 +66,7 @@ tf_pca.fit()
 pca = tf_pca.reduce(keep_info=0.9) # Results in two dimensions
 
 color_mapping = {0: sns.xkcd_rgb[’bright purple’], 1:
-				sns.xkcd_rgb[’lime’], 2: sns.xkcd_rgb[’ochre’]}
+		sns.xkcd_rgb[’lime’], 2: sns.xkcd_rgb[’ochre’]}
 colors = list(map(lambda x: color_mapping[x], label))
 
 plt.scatter(pca[:, 0], pca[:, 1], c=colors)
